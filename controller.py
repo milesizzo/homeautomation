@@ -17,6 +17,7 @@ class Receiver:
             data = data.strip()
             if data:
                 break
+        print(data)
         words = data.split()
         return words[2], words[1]
 

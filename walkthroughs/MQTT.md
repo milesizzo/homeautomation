@@ -15,3 +15,7 @@ I've set up the first Zigbee2MQTT server within the Home Assistant Raspberry Pi 
 Setting up a second Zigbee2MQTT server (eg. in another location) requires devices to be published under a different topic to the default (`zigbee2mqtt`). If this isn't done, `homeassistant` topics will not be published and device discovery will not work in Home Assistant (in fact, the devices will disappear).
 
 You will need to set up credentials for this Zigbee2MQTT server to access Mosquitto (the MQTT broker). This can be done by setting up a native Home Assistant user, and using this username and password in Zigbee2MQTT.
+
+# Home Assistant
+
+If some of the Zigbee2MQTT devices are offline or not reporting values but others are, try restarting all Zigbee2MQTT servers. This sends out a message telling Home Assistant what devices are available.
